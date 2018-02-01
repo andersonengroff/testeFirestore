@@ -1,0 +1,43 @@
+{
+  "projects": {
+    "master": "testefirebase-7ff11",
+    "prod": "testefirebase-7ff11",
+    "default": "testefirebase-7ff11"
+  },
+  "ci": {
+    "createConfig": {
+      "master": {
+        "version": "${npm_package_version}",
+        "env": "development",
+        "firebase": {
+          "apiKey": "AIzaSyD4abGwQu_9OsM5GmCKwifbkr3tozK2a1Y",
+          "authDomain": "testefirebase-7ff11.firebaseapp.com",
+          "databaseURL": "https://testefirebase-7ff11.firebaseio.com",
+          "projectId": "testefirebase-7ff11",
+          "storageBucket": "testefirebase-7ff11.appspot.com"
+        },
+        "reduxFirebase": {
+          "userProfile": "users",
+          "enableLogging": false,
+          "updateProfileOnLogin": false
+        }
+      },
+      "prod": {
+        "version": "${npm_package_version}",
+        "env": "production",
+        "firebase": {
+          "apiKey": "AIzaSyD4abGwQu_9OsM5GmCKwifbkr3tozK2a1Y",
+          "authDomain": "testefirebase-7ff11.firebaseapp.com",
+          "databaseURL": "https://testefirebase-7ff11.firebaseio.com",
+          "projectId": "testefirebase-7ff11",
+          "storageBucket": "testefirebase-7ff11.appspot.com"
+        },
+        "reduxFirebase": {
+          "userProfile": "users",
+          "enableLogging": false,
+          "updateProfileOnLogin": false
+        }
+      }
+    }
+  }
+}
